@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    color: white;
+    background: rgba(70, 66, 66, 1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.developer-part1{
+    height: 100px;
+    width: 100%;
+    /* background-color:pink; */
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.developer-part1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+}
+.developer-part1 p::after{
+    content: ' ';
+    display: flex;
+    align-items: center;
+    width: 35%;
+    height: 3px;
+    border-radius: 10px;
+    background: gray;
+    position: absolute;
+    left:32.3%;
+    bottom: -4px;
+    transform: scalex(1);
+    transition: transform 0.5s, duration 0.5s;
+}
+.developer-part1 p:hover::after{
+    transform: scaleX(3);
+    background: rgba(255, 255, 255,0.8) ;
+}
+
+
+/**DEVELOPER'S--BOX--PART2--**/
+
+.Developers-Box{
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Developer-Box1{
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.developer-box1{
+    background-color: rgba(255, 255, 255,0.75);
+    width: 55vh;
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-radius: 28px;
+    transform: scaleX(1);
+    transform: scaleY(1);
+    transition-duration: 0.5s;
+}
+.developer-box1:hover{
+    box-shadow: 12px 12px 12px  rgba(0, 0, 0, 1);
+    transform: scaleX(1.1);
+    transform: scaleY(1.1);
+}
+.developer-box1 p{
+    color: black;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Developer-Box2{
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 6vh;
+}
+.Developer-Box3{
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 6vh;
+}
+
+
+/**Developers-More-Button**/
+
+.Developers-more{
+    width: 100%;
+    /* background-color: aquamarine; */
+    height: 92px;
+    display: flex;
+    justify-content: center;
+}
+.Developers-more button{
+    width: 185px;
+    height: 58px;
+    background-color:rgba(0,0,0,0.25);
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 25px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: background-color 0.6.5s;
+}
+.Developers-more button:hover{
+    background-color: rgb(115, 111, 111);
+}
+.Developers-more button:active{
+    background-color: rgb(6, 5, 5);
+    color: white;
+}
